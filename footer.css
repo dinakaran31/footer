@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    min-height: 100vh;
+    flex-direction:column;
+    background: #ede7f6;
+}
+footer{
+    position:relative;
+    width: 100%;
+    height:auto;
+    padding: 50px 100px;
+    background: rgba(214, 214, 214, 0.5);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .containeer{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+footer .containeer .sec{
+    margin-right: 30px;
+}
+footer .containeer .aboutus{
+   
+    width:40%;  /*here the width has been changed from 40 % to 100% by myself*/
+}
+footer .containeer .aboutus h2{
+    position: relative;
+    color:rgb(56, 56, 56);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .containeer .aboutus h2::before{
+    content:'';
+    position:absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .aboutus p{
+    color:rgb(75, 74, 74);
+    padding-bottom: 20px;
+}
+footer.containeer .payments{
+    padding-top: 10px;
+}
+/*from this quick links part is edited*/
+footer .containeer .quicklinks h2{
+    position: relative;
+    color:rgb(56, 56, 56);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .containeer .quicklinks h2::before{
+    content:'';
+    position:absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.quicklinks ul li{
+    list-style: none;
+}
+.quicklinks ul li a{
+    color: rgb(75, 74, 74);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quicklinks ul li a:hover{
+    color:rgb(53, 206, 142);
+    margin-left: 10px;
+    transition: all .5s ease;
+}
+/* From This contactus part is edited*/
+
+footer .containeer  .contact h2{
+    position: relative;
+    color:rgb(56, 56, 56);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .containeer .contact h2::before{
+    content:'';
+    position:absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact ul li{
+    list-style: none;
+}
+.contact ul li a{
+    color: rgb(75, 74, 74);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.contact ul li a:hover{
+    color:#fff;
+}
+.contact{
+    width: calc(35% -60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+/*these css property represents the icons in the contact class*/
+.contact .info li span:nth-child(1){
+    color:rgb(53, 206, 142);
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: rgb(75, 74, 74);
+    text-transform: uppercase;
+}
+.contact .info li  a{
+    color: rgb(75, 74, 74);
+    text-decoration: none;
+}
+.contact .info li  a:hover{
+    color: rgb(53, 206, 142);
+}
+/*from this Aboutus link part is edited*/
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    position:relative;
+    bottom: 50px;
+    display: flex;
+    
+}
+.sci li a{
+    list-style: none;
+    margin-right: 15px;
+    transform:translateY(70px);
+    transition: 0.5s;
+    opacity: 1;
+    transition-delay: calc(0.1s * var(--i));
+    color: rgb(75, 74, 74);;
+    font-size: 20px;
+}
+footer .sci li a:hover{
+    color:rgb(53, 206, 142);
+}
+.copyrights{
+    width:100%;
+    background: #181818;
+    padding:8px 100px;
+    text-align: center;
+    color: #999;
+}
+@media (max-width:600px){
+    footer .containeer .aboutus {
+        width: 100%;
+       
+    }
+}
